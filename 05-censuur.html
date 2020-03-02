@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var tekst =
+        "Godslastering en andere vuile woorden zullen gecensureerd worden!";
+      document.write(tekst);
+      var censuur = prompt("Welk woord wil je censureren ?");
+      var vervang = "GECENSUREERD";
+      if (censuur == tekst.substring(0, 13)) {
+        document.write(
+          "<p>" +
+            vervang +
+            " en andere vuile woorden zullen gecensureerd worden!</p>"
+        );
+      } else if (censuur == tekst.substring(14, 16)) {
+        document.write(
+          "<p>Godslastering " +
+            vervang +
+            " andere vuile woorden zullen gecensureerd worden!</p>"
+        );
+      } else if (censuur == tekst.substring(17, 23)) {
+        document.write(
+          "<p>Godslastering en " +
+            vervang +
+            " vuile woorden zullen gecensureerd worden!</p>"
+        );
+      } else if (censuur == tekst.substring(24, 29)) {
+        document.write(
+          "<p>Godslastering en andere " +
+            vervang +
+            " woorden zullen gecensureerd worden!</p>"
+        );
+      } else if (censuur == tekst.substring(30, 37)) {
+        document.write(
+          "<p>Godslastering en andere vuile " +
+            vervang +
+            " zullen gecensureerd worden!</p>"
+        );
+      } else if (censuur == tekst.substring(38, 44)) {
+        document.write(
+          "<p>Godslastering en andere vuile woorden " +
+            vervang +
+            " gecensureerd worden!</p>"
+        );
+      } else if (censuur == tekst.substring(45, 57)) {
+        document.write(
+          "<p>Godslastering en andere vuile woorden zullen " +
+            vervang +
+            " worden!</p>"
+        );
+      } else if (censuur == tekst.substring(58, 64)) {
+        document.write(
+          "<p>Godslastering en andere vuile woorden zullen gecensureerd " +
+            vervang +
+            " !</p>"
+        );
+      } else if (censuur.indexOf() == -1) {
+        document.write("<p>Dat woord vind ik niet!</p>");
+      }
+    </script>
+  </body>
+</html>
