@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var weekdag = prompt("Tik de dag van de week in");
+      var dagen = new Array(
+        "maandag",
+        "dinsdag",
+        "woensdag",
+        "donderdag",
+        "vrijdag",
+        "zaterdag",
+        "zondag"
+      );
+
+      if (weekdag == null) {
+        alert("U heeft geannuleerd!");
+      } else if (weekdag.length == 0) {
+        alert("U heeft niets ingevuld");
+      } else if (weekdag == dagen[0]) {
+        /*else if (
+        weekdag != dagen[0] ||
+        weekdag != dagen[1] ||
+        weekdag != dagen[2] ||
+        weekdag != dagen[3] ||
+        weekdag != dagen[4] ||
+        weekdag != dagen[5] ||
+        weekdag != dagen[6]
+      ) {
+        alert("U heeft geen weekdag met de juiste schrijfwijze ingegeven");
+      }*/
+
+        alert("Helaas, het is een werkdag");
+      } else if (weekdag == dagen[1]) {
+        alert("Helaas, het is een werkdag");
+      } else if (weekdag == dagen[2]) {
+        alert("Helaas, het is een werkdag");
+      } else if (weekdag == dagen[3]) {
+        alert("Helaas, het is een werkdag");
+      } else if (weekdag == dagen[4]) {
+        alert("Helaas, het is een werkdag");
+      } else if (weekdag == dagen[5]) {
+        alert("Hoera, het is weekend!");
+      } else if (weekdag == dagen[6]) {
+        alert("Hoera, het is weekend!");
+      }
+    </script>
+  </body>
+</html>
